@@ -15,7 +15,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -46,8 +47,9 @@
 					<h1>Going Enterprise</h1>
 					<h3>with QGIS and PostGIS</h3>
 					<p>
-						<small>Created by <a href="http://isharemaps.com">Jo Cook, Astun Technology</a> / <a href="http://twitter.com/archaeogeek">@archaeogeek</a></small>
+						<small><a href="http://isharemaps.com">Jo Cook, Astun Technology</a> / <a href="http://twitter.com/archaeogeek">@archaeogeek</a></small>
 					</p>
+					<img class="center" src="./images/logo.jpg" alt="Astun Logo">
 				</section>
 
 				<section>
@@ -66,220 +68,128 @@
 					<p>Astun Technology was founded in 2005 to provide enterprise web-based mapping to (mainly) local authorities, based on an open source software stack</p>
 					<p>I've been working for Astun as a consultant for 3 years, but have been working with open source GIS since 2004</p>
 					</h2>
+					<img class="center" src="./images/astun_team.png" alt="Astun Team">
 					<aside class="notes">
-						The web has got the idea of enterprise open source since the word go- every time anyone goes on line they use open source software (eg apache web servers) and don't bat an eyelid
+						The web has got the idea of enterprise open source since the word go- every time anyone goes on line they use open source software (eg apache web servers) and don't bat an eyelid but GIS is only just catching up
 					</aside>
 				</section>
 
-				<section>
-					<h2>What is Enterprise?</h2>
-					<ul>
-						<li>Security</li>
-						<li>Auditing</li>
-						<li>Scalability</li>
-						<li>Sharing</li>
-					</ul>
-					<aside class="notes">A picture from Star Trek would be nice here...</aside>
-				<section>
+				<section data-background="./images/ST_TOS_Cast.jpg" >
+					<h2 style="color:grey"><b>What is "Enterprise"?</b></h2>
+					<p style="color:grey" class="fragment">Sorry, couldn't resist...</p>
+				</section>
+
+				<section data-background="./images/gritter.png">
+						<h2>Security</h2>
+						<h2>Auditing</h2>
+						<h2>Scalability</h2>
+						<h2>Sharing</h2>
+				</section>
+
+				<section data-background="./images/containers.png">
+					<h2 style="color:grey">Keep Going...</h2>
+				</section>
 					
 
-				<section>
-					<h2>Keep Going...</h2>
-					<ul>
-						<li>GIS providing business value</li>
-						<li>A centralised, managed canonical store of data</li>
-						<li>Allows controlled editing of data as required</li>
-						<li>Provides metadata for auditing and compliance</li>
-					</ul>
+				<section data-background="./images/solution.png">
+						<h3>Business value</h3>
+						<h3>Centralised, managed, canonical store of data</h3>
+						<h3>Controlled editing</h3>
+						<h3>Metadata for auditing and compliance</h3>
 					<aside class="notes">
 						Read and write data in a controlled fashion, provide information on who created the data, when it was last edited, why, by whom...</aside>
 				</section>
 
-				<section>
-					<h2>Why Open Source Enterprise?</li>
-						<ul>
-							<li>Security</li>
-							<li>Auditing</li>
-							<li>Sharing</li>
-							<li>Scalability</li>
-						</ul>
-					<aside class="notes">Looks facetious but open source means average time for a bug fix from report to patch is vastly less, scalability and sharing are easier because you're not artifically limited by licensing, tools now have auditing built in</aside>
+				<section data-background="./images/openforbusiness.png">
+					<h2 style="color:white">Why Open Source Enterprise?</li>
+				</section>
+
+				<section data-background="./images/gritter.png">
+						<h2>Security</h2>
+						<h2>Auditing</h2>
+						<h2>Scalability</h2>
+						<h2>Sharing</h2>
+					<aside class="notes">Lower defect density (bugs per 1000 lines of code) and fix time, scalability and sharing are easier because you're not artifically limited by licensing, tools now have auditing built in. Can apply features such as ADFS, IP restriction, VPN access</aside>
 				</section>
 
 				<section>
 					<h2>QGIS</h2>
+					<img class="center" src="./images/qgislogo.png" alt="QGIS Logo">
+				</section>
+
+				<section>
+					<p>Control exactly what gets loaded at install or startup</p>
+					<img class="center" src="./images/commandlineqgis.png" alt="Command Line">
+				</section>
+
+				<section>
+					<p>Fine-grained customisation of appearance</p>
+					<img class="center" src="./images/qgis_simple.png" alt="QGIS Simple">
+				</section>
+
+				<section>
+						<h2>Plus...</h2>
+						<ul>
+							<li>Auto-configure database connections per user</li>
+							<li>Control installation of plugins</li>
+							<li>New layer definition files include references to datasource as well as styling</li>
+							<li>Prepare and deploy print templates over a network</li>
+							<li>Change splashscreens/icons...</li>
+						</ul>
+						<img class="center" src="./images/qgis_boundless.png" alt="QGIS for Boundless">
+					<aside class="notes">It's so customisable that Tim Sutton felt the need to remind people: it's still QGIS, you still have to abide by the GPL</aside>
+				</section>
 					
-
-
-
-
-				<!-- Example of nested vertical slides -->
-				
-
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
+					<img class="center" src="./images/postgresql_logo.png" alt="PostGreSQL">
+					<img class="center" src="./images/postgis-logo.png" alt="PostGIS">
 				</section>
 
-				
-
-				
-
 				<section>
-					<h2>Marvelous Unordered List</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>New(ish) HSTORE extension allows storage of unstructured key/value data</li>
+						<li>This can be utilised for a full audit system including snapshots and roll-backs</li>
+						<li>PostGIS "st_isvalid" and "st_isvalidreason" functions</li>
+						<li>PostgreSQL 9.2(+) is optimised for virtual environments and multi-processor scalability</li>
 					</ul>
+					<aside class="notes">Less power used when idle, huge improvements in index scans for large vols of data, can use GSSAPI for secure authentication</aside>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h2>QGIS and PostGIS</h2>
+					<p>New plugin for utilising PostgreSQL audit capabilities</p>
+					<img class="center" src="./images/audit.png" alt="QGIS Audit Plugin">
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+				<section>
+					<h2>Data validation</h2>
+					<p>Use custom forms for validating text entry</p>
+					<img class="center" src="./images/custom_forms.png" alt="Custom Forms">
+					<aside class="notes">Easy to imagine a workflow using a dynamic postgres view showing st_isvalid for geometry validation</aside>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
+				<section>
+					<h2>Data validation</h2>
+					<p>Create a workflow using st_isvalid/st_isvalidreason to highlight geometry errors</p>
+					<img class="center" src="./images/isvalid_reason.png" alt="isvalid_reason">
+					<aside class="notes">Eg dynamic postgres view showing st_isvalid</aside>
+				</section>
+
+				<section>
+					<img class="center" src="./images/solution.png" alt="Solution">
+				</section>
+
+				<section>
+					<img class="center" class="fragment" src="./images/meerkat.png" alt="Simples">
+					<h2>Simples!</h2>
+					<p class="fragment">Or at least, quite achievable</p>
+				</section>
+
+				<section>
+					<h1>Thanks :-)</h1>
+					<p>Jo Cook, Astun Technology</a> / <a href="http://twitter.com/archaeogeek">@archaeogeek</a>
 					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				
-
-				
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<img class="center" src="./images/logo.jpg" alt="Astun Logo">
 				</section>
 
 			</div>
@@ -300,7 +210,7 @@
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',

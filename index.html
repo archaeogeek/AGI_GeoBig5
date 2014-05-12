@@ -58,25 +58,35 @@
 						<li>Who?</li>
 						<li>What?</li>
 						<li>Why?</li>
-						<li>Customising QGIS</li>
-						<li>Data audit workflow</li>
+						<li>Customising QGIS for Enterprise use</li>
+						<li>Enterprise workflows for QGIS and PostGIS</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Who?</h2>
 					<p>Astun Technology was founded in 2005 to provide enterprise web-based mapping to (mainly) local authorities, based on an open source software stack</p>
-					<p>I've been working for Astun as a consultant for 3 years, but have been working with open source GIS since 2004</p>
-					</h2>
 					<img class="center" src="./images/astun_team.png" alt="Astun Team">
 					<aside class="notes">
 						The web has got the idea of enterprise open source since the word go- every time anyone goes on line they use open source software (eg apache web servers) and don't bat an eyelid but GIS is only just catching up
 					</aside>
 				</section>
 
-				<section data-background="./images/ST_TOS_Cast.jpg" >
-					<h2 style="color:grey"><b>What is "Enterprise"?</b></h2>
-					<p style="color:grey" class="fragment">Sorry, couldn't resist...</p>
+				<section>
+					<h2>Who?</h2>
+					<p>I've been working for Astun as a consultant for 3 years, but have been working with open source GIS since 2004, and this is me, according to "Find Your Kitten"</p>
+					<img class="center" src="./images/kitten.jpg" alt="Kitten">
+					<aside class="notes">
+						The web has got the idea of enterprise open source since the word go- every time anyone goes on line they use open source software (eg apache web servers) and don't bat an eyelid but GIS is only just catching up
+					</aside>
+				</section>
+
+				<section>
+					<h2>What is "Enterprise"?</h2>
+				</section>
+
+				<section data-background="./images/star_trek.jpg">
+					<h2 style="color:grey" class="fragment">Sorry, couldn't resist...</h2>
 				</section>
 
 				<section data-background="./images/gritter.png">
@@ -92,10 +102,10 @@
 					
 
 				<section data-background="./images/solution.png">
-						<h3>Business value</h3>
-						<h3>Centralised, managed, canonical store of data</h3>
-						<h3>Controlled editing</h3>
-						<h3>Metadata for auditing and compliance</h3>
+						<h2>Business value</h2>
+						<h2>Centralised data store</h2>
+						<h2>Controlled editing</h2>
+						<h2>Auditing and compliance</h2>
 					<aside class="notes">
 						Read and write data in a controlled fashion, provide information on who created the data, when it was last edited, why, by whom...</aside>
 				</section>
@@ -143,33 +153,24 @@
 				<section>
 					<img class="center" src="./images/postgresql_logo.png" alt="PostGreSQL">
 					<img class="center" src="./images/postgis-logo.png" alt="PostGIS">
-				</section>
-
-				<section>
-					<ul>
-						<li>New(ish) HSTORE extension allows storage of unstructured key/value data</li>
-						<li>This can be utilised for a full audit system including snapshots and roll-backs</li>
-						<li>PostGIS "st_isvalid" and "st_isvalidreason" functions</li>
-						<li>PostgreSQL 9.2(+) is optimised for virtual environments and multi-processor scalability</li>
-					</ul>
+					<p>PostgreSQL 9.2(+) is optimised for virtual environments and multi-processor scalability</p>
 					<aside class="notes">Less power used when idle, huge improvements in index scans for large vols of data, can use GSSAPI for secure authentication</aside>
 				</section>
 
 				<section>
-					<h2>QGIS and PostGIS</h2>
-					<p>New plugin for utilising PostgreSQL audit capabilities</p>
+					<p>New plugin: <a href="http://plugins.qgis.org/plugins/postgres91plusauditor/">Postgres 91 plus Auditor</a></p>
 					<img class="center" src="./images/audit.png" alt="QGIS Audit Plugin">
+					<aside class="notes">Needs HSTORE extension for unstructured storage of key-value pairs</aside>
 				</section>
 
 				<section>
 					<h2>Data validation</h2>
 					<p>Use custom forms for validating text entry</p>
 					<img class="center" src="./images/custom_forms.png" alt="Custom Forms">
-					<aside class="notes">Easy to imagine a workflow using a dynamic postgres view showing st_isvalid for geometry validation</aside>
 				</section>
 
 				<section>
-					<h2>Data validation</h2>
+					<h2>Geometry validation</h2>
 					<p>Create a workflow using st_isvalid/st_isvalidreason to highlight geometry errors</p>
 					<img class="center" src="./images/isvalid_reason.png" alt="isvalid_reason">
 					<aside class="notes">Eg dynamic postgres view showing st_isvalid</aside>
@@ -182,7 +183,7 @@
 				<section>
 					<img class="center" class="fragment" src="./images/meerkat.png" alt="Simples">
 					<h2>Simples!</h2>
-					<p class="fragment">Or at least, quite achievable</p>
+					<p class="fragment">Or at least, quite achievable!</p>
 				</section>
 
 				<section>

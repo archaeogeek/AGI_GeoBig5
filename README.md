@@ -4,7 +4,7 @@ AGI_GeoBig5
 
 ## My talk on Going Enterprise with QGIS and PostGIS at AGI GeoBig5 in Belfast, 13th May 2014 ##
 
-Online version available at [http://archaeogeek.github.io/agi_geobig5](http://archaeogeek.github.io/agi_geobig5)
+Online version available [here](http://archaeogeek.github.io/AGI_GeoBig5)
 
 ### Transcript ###
 
